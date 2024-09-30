@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> BMI Calculate </title>
+        <link href="bmi.css" rel="stylesheet"/>
+    </head>
+
+
+
+    <body>
+
+        <div class="Container">
+            
+            <div class="Intro">
+                <h1> โปรแกรมคำนวนค่าดัชนีมวลกาย - BMI </h1>
+                <p> ค่า BMI คือค่าดัชนีที่ใช้ชี้วัดความสมดุลของน้ำหนักตัว (กิโลกรัม) และส่วนสูง (เซนติเมตร) ซึ่งสามารถระบุได้ว่า      ตอนนี้รูปร่างของคนคนนั้นอยู่ในระดับใด ตั้งแต่อ้วนมากไปจนถึงผอมเกินไป <br>
+                <br>
+                Body Mass Index (BMI) มีสูตรการคำนวณ = น้ำหนักตัว[Kg] / (ส่วนสูง[m] ยกกำลังสอง) สูตรคำนวณเหมาะสำหรับใช้ประเมินผู้ที่มีอายุตั้งแต่ 20 ปีขึ้นไป ประโยชน์ของการวัดค่า BMI เพื่อดูอัตราเสี่ยงต่อการเกิดโรคต่าง ๆ ตรวจสอบภาวะไขมันและความอ้วนดังนั้นการทำให้ร่างกายอยู่ในเกณฑ์ปกติจึงมีความสำคัญอย่างยิ่งกับผู้ที่ต้องการรักษาสุขภาพในระยะยาว </p>
+            </div>
+    
+
+
+            <div class="Input-Form">
+                <div id="input-container">
+                    <p>ส่วนสูง</p>
+                    <input type="text" class="input-box" id="height">
+                </div>
+                <div id="input-container">
+                    <p>น้ำหนัก</p>
+                    <input type="text" class="input-box" id="weight">
+                </div>
+                <button id="calculate-button" onclick="getValue()"> คำนวณ </button>
+            </div>
+
+            <div class="Result-Box"></div>
+                <p>ผลการทดสอบ</p>
+                <p id="result">-</p>
+            </div>
+
+        </div>
+        
+
+
+        <script src="bmi.js"></script>
+
+
+    </body>
+
+
+    
+</html>
